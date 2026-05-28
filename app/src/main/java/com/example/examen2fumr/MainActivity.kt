@@ -21,14 +21,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val etUsername = findViewById<EditText>(R.id.et_username)
         val etPassword = findViewById<EditText>(R.id.et_password)
         val btnLogin = findViewById<Button>(R.id.btn_login)
 
         btnLogin.setOnClickListener {
+            val username = etUsername.text.toString()
             val password = etPassword.text.toString()
 
             if (password == "abc123") {
-                val intent = Intent(this, ProfileActivity::class.java)
+                val intent = Intent(this, ProfileActivity::class.java).apply {
+                    putExtra("EXTRA_USERNAME", username)
+                }
                 startActivity(intent)
             } else {
                 Toast.makeText(this, getString(R.string.error_invalid_password), Toast.LENGTH_SHORT).show()
