@@ -4,4 +4,6 @@
     <string name="label_username">Nombre de usuario</string>
     <string name="label_password">Contraseña</string>
     <string name="button_login">Iniciar Sesión</string>
+    <string name="label_default_user">Usuario</string>
+    <string name="label_phone">Teléfono: 5534829770</string>
 </resources>
