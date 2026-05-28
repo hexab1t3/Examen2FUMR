@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Examen2FUMR</string>
+    <string name="label_welcome">Bienvenid@</string>
+    <string name="label_username">Nombre de usuario</string>
+    <string name="label_password">Contraseña</string>
+    <string name="button_login">Iniciar Sesión</string>
 </resources>
